@@ -68,8 +68,9 @@ filetype plugin indent on
 " ==== Filetype specific settings ====
 autocmd BufRead,BufNewFile *.json set ft=javascript
 autocmd FileType puppet set iskeyword+=:,-
-autocmd FileType sh,perl,awk,python set ts=4|set sw=4|set sts=4
-autocmd FileType text,markdown set ts=4|set sw=4|set et|set si|set tw=80
+autocmd FileType ruby,yaml set ts=2|set sw=2|set sts=2|set et|set si
+autocmd FileType sh,perl,awk,python set ts=4|set sw=4|set sts=4|set et|set si
+autocmd FileType text,markdown set ts=4|set sw=4|set sts=4|set et|set si|set tw=80
 
 " ====  Theme and color settings, Syntax hilighting ====
 set t_Co=256
