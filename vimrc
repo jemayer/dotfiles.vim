@@ -55,6 +55,9 @@ Bundle 'gmarik/vundle'
 Bundle 'rodjek/vim-puppet'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Jimdo/vim-spec-runner'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'jakar/vim-json'
+
 "Color schemes
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tomasr/molokai'
