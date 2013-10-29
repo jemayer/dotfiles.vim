@@ -55,6 +55,9 @@ Bundle 'gmarik/vundle'
 Bundle 'rodjek/vim-puppet'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Jimdo/vim-spec-runner'
+"Color schemes
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tomasr/molokai'
 "End of Vundle setup
 
 filetype plugin indent on
@@ -69,6 +72,7 @@ autocmd FileType text,markdown set ts=4|set sw=4|set et|set si|set tw=80
 set t_Co=256
 set background=dark
 colorscheme solarized
+"colorscheme molokai
 
 " ==== Searching & Moving ====
 set ignorecase
