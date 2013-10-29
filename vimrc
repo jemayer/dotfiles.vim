@@ -95,6 +95,7 @@ nnoremap <leader>D :!git diff<cr>
 
 " ==== Needs Ctrl-P (installed by vundler) ====
 nnoremap <leader>f :CtrlP<cr>
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25'
 
 " ==== Source spec-runner ====
 source ~/.vim/scripts/spec-runner.vim
