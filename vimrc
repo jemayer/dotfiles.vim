@@ -40,7 +40,8 @@ set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
 "Yank and paste with the system clipboard
 set clipboard=unnamed
 "Highlight whitespaces at the end of the line
-highlight ExtraWhitespace ctermbg=darkred
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 "Configure leader key
 let mapleader = ","
