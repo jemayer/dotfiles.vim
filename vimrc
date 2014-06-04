@@ -48,23 +48,24 @@ let mapleader = ","
 
 " ==== Set up Vundle (https://github.com/gmarik/vundle) ====
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 "List of plugins installed by Vundle
-Bundle 'gmarik/vundle'
-Bundle 'rodjek/vim-puppet'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Jimdo/vim-spec-runner'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'jakar/vim-json'
-
+Plugin 'gmarik/Vundle.vim'
+Plugin 'rodjek/vim-puppet'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Jimdo/vim-spec-runner'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'jakar/vim-json'
+Plugin 'fatih/vim-go'
 "Color schemes
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tomasr/molokai'
-"End of Vundle setup
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
 
+call vundle#end()
 filetype plugin indent on
+" ==== End of Vundle setup ====
 
 " ==== Filetype specific settings ====
 autocmd BufRead,BufNewFile *.json set ft=javascript
@@ -76,8 +77,8 @@ autocmd FileType text,markdown set ts=4|set sw=4|set sts=4|set et|set si|set tw=
 " ====  Theme and color settings, Syntax hilighting ====
 set t_Co=256
 set background=dark
-colorscheme solarized
-"colorscheme molokai
+"colorscheme solarized
+colorscheme molokai
 
 " ==== Searching & Moving ====
 set ignorecase
