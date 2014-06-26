@@ -59,6 +59,7 @@ Plugin 'Jimdo/vim-spec-runner'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'jakar/vim-json'
 Plugin 'fatih/vim-go'
+Plugin 'bling/vim-airline'
 "Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -107,3 +108,6 @@ nnoremap <leader>D :!git diff<cr>
 " ==== Needs Ctrl-P (installed by vundler) ====
 nnoremap <leader>f :CtrlP<cr>
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25'
+
+" === Set a fancy font for vim-airline ===
+let g:airline_powerline_fonts = 1
