@@ -60,6 +60,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'jakar/vim-json'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
+Plugin 'majutsushi/tagbar'
 "Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -111,3 +112,6 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25'
 
 " === Set a fancy font for vim-airline ===
 let g:airline_powerline_fonts = 1
+
+" === Tagbar ===
+nmap <leader>b :TagbarToggle<CR>
