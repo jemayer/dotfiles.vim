@@ -57,10 +57,11 @@ Plugin 'rodjek/vim-puppet'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Jimdo/vim-spec-runner'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'jakar/vim-json'
 Plugin 'fatih/vim-go'
 Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
+Plugin 'elzr/vim-json'
+Plugin 'tpope/vim-fugitive'
 "Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -108,10 +109,14 @@ nnoremap <leader>D :!git diff<cr>
 
 " ==== Needs Ctrl-P (installed by vundler) ====
 nnoremap <leader>f :CtrlP<cr>
-let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:25'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:20'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 
 " === Set a fancy font for vim-airline ===
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " === Tagbar ===
 nmap <leader>b :TagbarToggle<CR>
