@@ -62,6 +62,7 @@ Plugin 'bling/vim-airline'
 Plugin 'majutsushi/tagbar'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-fugitive'
+Plugin 'kchmck/vim-coffee-script'
 "Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
