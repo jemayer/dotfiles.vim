@@ -20,13 +20,15 @@ set cmdheight=2
 "Show line and column number
 set ruler
 "Highlight screen column
-set colorcolumn=81
+set textwidth=80
+set colorcolumn=+1
 "Always show status line
 set laststatus=2
 "Custom status line
 set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
-"Highlight current line
+"Highlight current line and column
 set cursorline
+set cursorcolumn
 "Show line numbers
 set number
 "Minimal number of columns to use for line numbers
@@ -63,6 +65,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'airblade/vim-gitgutter'
 "Color schemes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
@@ -84,6 +87,7 @@ set background=dark
 "colorscheme solarized
 colorscheme molokai
 
+highlight ColorColumn ctermbg=red
 " ==== Searching & Moving ====
 set ignorecase
 set smartcase
