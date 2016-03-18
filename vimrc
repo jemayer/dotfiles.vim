@@ -66,8 +66,9 @@ Plugin 'elzr/vim-json'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'klen/python-mode'
+Plugin 'scrooloose/nerdtree.git'
 "Color schemes
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 
@@ -127,9 +128,5 @@ let g:airline#extensions#tabline#enabled = 1
 " === Tagbar ===
 nmap <leader>b :TagbarToggle<CR>
 
-" === Python mode stuff ===
-let g:pymode_folding = 0
-let g:pymode_lint_checker = "pep8"
-" disable line length check
-let g:pymode_lint_ignore = "E501"
-let g:pymode_rope_lookup_project = 0
+"=== NERDTree ===
+map <C-n> :NERDTreeToggle<CR>
