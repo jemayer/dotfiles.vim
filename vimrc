@@ -55,7 +55,7 @@ call vundle#begin()
 
 "List of plugins installed by Vundle
 Plugin 'gmarik/Vundle.vim'
-Plugin 'rodjek/vim-puppet'
+"Plugin 'rodjek/vim-puppet'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Jimdo/vim-spec-runner'
 Plugin 'nathanaelkane/vim-indent-guides'
